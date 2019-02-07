@@ -33,6 +33,7 @@ namespace ReportLoaderTests
 
 
         [Test]
+        [Ignore("Flexera provided sample data files don't fit in github. Put them in the 'test' directory if you want to enable these tests")]
         public void RunWithSmallData()
         {
             const string fileName = @"..\..\..\..\..\test\sample-small.csv";
@@ -52,6 +53,7 @@ namespace ReportLoaderTests
 
         // Takes around 30 seconds with .net core release version - over 20 seconds of this time is taken by CSV loading/parsing.
         [Test]
+        [Ignore("Flexera provided sample data files don't fit in github. Put them in the 'test' directory if you want to enable these tests")]
         public void RunWithLargeData()
         {
             const string fileName = @"..\..\..\..\..\test\sample-large.csv";

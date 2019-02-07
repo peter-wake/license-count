@@ -13,6 +13,8 @@ namespace ReportLoaderTests
     //
     // If we are to believe the data is clean, such errors could be canaries for issues like incorrect parsing of computer types or IDs.
 
+    [TestFixture]
+    [Ignore("Flexera provided sample data files don't fit in github. Put them in the 'test' directory if you want to enable these tests")]
     public class IntegrityTests
     {
         [Test]
