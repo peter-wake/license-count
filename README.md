@@ -14,11 +14,11 @@ dotnet test
 
 ## Run with:
 
-dotnet src\LicenseReporter\bin\Debug\netcoreapp2.1\LicenseReporter.dll _**data-file-path**_
+dotnet src\LicenseCounter\bin\Debug\netcoreapp2.1\LicenseCounter.dll _**data-file-path**_
 
 Or
 
-cd src\LicenseReporter
+cd src\LicenseCounter
 
 dotnet run _**data-file-path**_
 

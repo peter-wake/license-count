@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "LicenseReporter": {
-      "commandName": "Project",
-      "commandLineArgs": "..\\..\\..\\..\\..\\test\\installation-report.csv"
-    }
-  }
-}

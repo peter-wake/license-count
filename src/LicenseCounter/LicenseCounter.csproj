@@ -3,11 +3,15 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>LicenseCounter</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="SimpleInjector" Version="4.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InstallationModel\InstallationModel.csproj" />
+    <ProjectReference Include="..\ReportLoader\ReportLoader.csproj" />
   </ItemGroup>
 
 </Project>

@@ -15,7 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportLoader", "src\ReportL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportLoaderTests", "test\ReportLoaderTests\ReportLoaderTests.csproj", "{C3F28DE4-860C-4439-AE99-BCCA1B830AE0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LicenseReporter", "src\LicenseReporter\LicenseReporter.csproj", "{C03DE2C4-FD4B-4ABF-ADAA-9EC7E6D91D94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LicenseCounter", "src\LicenseCounter\LicenseCounter.csproj", "{C03DE2C4-FD4B-4ABF-ADAA-9EC7E6D91D94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96AC0AE1-9E9A-4117-9A80-245C7D07E9CD}"
+	ProjectSection(SolutionItems) = preProject
+		developer code test.pdf = developer code test.pdf
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

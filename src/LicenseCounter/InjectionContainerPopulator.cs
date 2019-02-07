@@ -2,7 +2,7 @@
 using ReportLoader;
 using SimpleInjector;
 
-namespace LicenseReporter
+namespace LicenseCounter
 {
     public class InjectionContainerPopulator
     {
