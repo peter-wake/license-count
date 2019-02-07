@@ -14,11 +14,13 @@ dotnet test
 
 ## Run with:
 
-dotnet src\LicenseReporter\bin\Debug\netcoreapp2.1\LicenseReporter.dll <data-file-path>
+dotnet src\LicenseReporter\bin\Debug\netcoreapp2.1\LicenseReporter.dll _**data-file-path**_
 
 Or
+
 cd src\LicenseReporter
-dotnet run <data-file-path>
+
+dotnet run _**data-file-path**_
 
 If you do not specify a data file, a default will be used.
 Likely, it will not be found, and you'll see an error message.
@@ -44,14 +46,14 @@ External NuGet packages:
 The license counting rule used is:
 
 
-"Some applications from vendors are allowed to be installed on multiple computers per user with specific 
-restrictions. In our scenario, each copy of the application (ID 374) allows the user to install the 
-application on to two computers if at least one of them is a laptop."
+> "Some applications from vendors are allowed to be installed on multiple computers per user with specific 
+> restrictions. In our scenario, each copy of the application (ID 374) allows the user to install the 
+> application on to two computers if at least one of them is a laptop."
 
 
 This requirement is a little "interesting" because examples are given for laptop+desktop and laptop + multiple desktops, but not for laptop + laptop.
 
-The rule states "on to two computers if at least one of them is a laptop", so we must conclude that laptop + laptop can share a license, as at least one of them is definitel a laptop.
+The rule states **"on to two computers if at least one of them is a laptop"**, so we must conclude that laptop + laptop can share a license, as at least one of them is definitel a laptop.
 
 However, given the delicate nature of the wording, this is the sort of requirement that I'd seek clarification on if I came across it during normal work.
 
@@ -59,7 +61,9 @@ However, given the delicate nature of the wording, this is the sort of requireme
 
 Some of the 'functional' tests in the suite have been flagged to ignore, as they depended on the Flexera supplied data files, which are not in the git repository. If you drop these into the tests directory, you can unignore and run those tests.
 
-The main program that launches the load and analyse work is extremely crude and simplistic. This is because the requirements say nothing about its capabilities an set no expectation. Clearly, in a "real" application, the user interface, even to a command-line program, requires polish and attention. There would be various schemes for configuring defaults, numerous parameters and options, and detailed feedback for errors.
+The main program that launches the load and analyse work is extremely crude and simplistic. This is because the requirements say nothing about its capabilities and setd no expectations.
+
+Clearly, in a "real" application, the user interface, even to a command-line program, requires polish and attention. There would be various schemes for configuring defaults, numerous parameters and options, and detailed feedback for errors.
 
 In this case, there is only one parameter: a file name, and no errors beyond a failure to find the file, because the requirements state "You will not have to consider unexpected situations"
 
