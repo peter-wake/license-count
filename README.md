@@ -30,6 +30,7 @@ You may also run the Release version, if you build it.
 ## Technology
 
 Main worker assemblies use dotnet standard 2.0.3.
+
 Dotnet core 1.1.0 is used for the tests and main program.
 
 It could trivially be switched to build in dotnet Framework to create an exe
@@ -61,7 +62,7 @@ However, given the delicate nature of the wording, this is the sort of requireme
 
 Some of the 'functional' tests in the suite have been flagged to ignore, as they depended on the Flexera supplied data files, which are not in the git repository. If you drop these into the tests directory, you can unignore and run those tests.
 
-The main program that launches the load and analyse work is extremely crude and simplistic. This is because the requirements say nothing about its capabilities and setd no expectations.
+The main program that launches the load and analyse work is extremely crude and simplistic. This is because the requirements say nothing about its capabilities and sets no expectations.
 
 Clearly, in a "real" application, the user interface, even to a command-line program, requires polish and attention. There would be various schemes for configuring defaults, numerous parameters and options, and detailed feedback for errors.
 
