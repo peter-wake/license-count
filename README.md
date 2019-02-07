@@ -30,9 +30,9 @@ Could trivially be switched to build in dotnet Framework.
 The license counting rule used is:
 
 
-Some applications from vendors are allowed to be installed on multiple computers per user with specific 
+"Some applications from vendors are allowed to be installed on multiple computers per user with specific 
 restrictions. In our scenario, each copy of the application (ID 374) allows the user to install the 
-application on to two computers if at least one of them is a laptop.
+application on to two computers if at least one of them is a laptop."
 
 
 This requirement is a little "interesting" because examples are given for laptop+desktop and laptop + multiple desktops, but not for laptop + laptop.
@@ -43,4 +43,4 @@ However, given the delicate nature of the wording, this is the sort of requireme
 
 ## Additional Notes
 
-Some tests have been ignored, as the depended on the Flexera supplied data files, which are not in the git repository. If you drop these into the tests directory, you can unignore and run those tests.
+Some tests have been ignored, as they depended on the Flexera supplied data files, which are not in the git repository. If you drop these into the tests directory, you can unignore and run those tests.
