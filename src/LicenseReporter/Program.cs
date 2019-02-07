@@ -36,12 +36,13 @@ namespace LicenseReporter
         /// <returns>An integer indicating the number of licenses required, or a negative value, indicating an error occurred.</returns>
         static int Main(string[] commandlineArguments)
         {
+            var fileName = DefaultFileName;
+
             try
             {
                 var container = new Container();
                 new InjectionContainerPopulator().Populate(container);
 
-                var fileName = DefaultFileName;
                 if (FileNameSpecifiedArgumentCount == commandlineArguments.Length)
                 {
                     fileName = commandlineArguments[0];
@@ -60,7 +61,8 @@ namespace LicenseReporter
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine($"ERROR: {e.Message}");
+                PrintUseGuide();
                 return ErrorCode;
             }
         }
@@ -86,7 +88,8 @@ namespace LicenseReporter
 
         private static void PrintUseGuide()
         {
-            Console.WriteLine($"Usage:\n  {Assembly.GetExecutingAssembly().GetName().Name} [<installation-report-file.CSV>]");
+            Console.WriteLine($"Usage:\n  dotnet {Assembly.GetExecutingAssembly().GetName().Name}.dll [<installation-report-file.CSV>]");
+            Console.WriteLine("    You must run from the directory where the DLL is located, or use 'dotnet run' from the project directory.");
         }
     }
 }
